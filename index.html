@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="./style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script lang="javascript" src="trait.js"></script>
+  <title>Frontend Mentor | Contact form</title>
+
+  
+</head>
+<body>
+<form class="formulaire">
+ <h2>Contact Us </h2> 
+  <div class="nom">
+      <div class="fnom">
+        <label>First name</label>
+        <input type="text" name="fnom" required="required">
+      </div>
+      <div class="lnom">
+        <label>Last name</label>
+        <input type="text" name="lnom"required="required">
+      </div>
+  </div>
+
+<label>Email Address</label>
+<input type="email" name="email" required="required"> 
+<label>Query Type</label> 
+<div class="radio">
+  <div >
+    <input type="radio" name="GEnquiry" value="GE" required="required"> 
+    <label> General Enquiry</label>
+  </div>
+  <div>
+    <input type="radio" name="GEnquiry" value="SR"required="required"> 
+    <label>Support Request</label> 
+  </div>
+</div>
+<label> Message</label>
+ <textarea name="msg" cols="60" rows="5" required="required" required="required">
+ </textarea>
+<div class="check">
+  <input type="checkbox" name="chek" value="ok" required="required"> <label> I consent to being contacted by the team</label>
+</div>
+
+<input type="submit" name="Submit" value="Submit" onclick="traitrement()" >  
+
+  <!-- Message Sent!
+  Thanks for completing the form. We'll be in touch soon! -->
+</form>
+ 
+</body>
+</html>
