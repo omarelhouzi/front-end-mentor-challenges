@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="/chemin-vers-fontawesome/css/all.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet"  href="./style.css">
+  <script  lang="javascript" src="traitement.js"></script>
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+
+<body>
+<div class="corps">
+  <form>
+    <div class="calcul">
+      <div id="err">
+        <label>DAY</label> 
+        <input type="text" name="day" id="day" required placeholder="DD">
+        <div id="msgday"></div>
+      </div>
+      <div id="errm">
+        <label>MONTH</label> 
+        <input type="text" name="mois" id="mois" required placeholder="MM">
+        <div id="msgmois"></div>
+      </div>
+      <div id="erra">
+        <label>YEAR</label> 
+        <input type="text" name="annee" id="annee" required placeholder="YYYY">
+        <div id="msgannee"></div>
+      </div>
+    </div>
+    <div class="btn">
+      <hr/>
+      <button type="button" onclick="calcule()"> <i class="fa fa-arrow-down" style="font-size:36px;color: aliceblue;"></i> </button>
+   
+    </div>
+  </form>
+  <div class="res">
+    <div><span id="reslta">- -</span><b> years</b> </div>
+    <div><span id="resltm">- -</span><b> months</b> </div>
+    <div><span id="resltj">- -</span> <b> days</b></div> 
+  </div>
+</body>
+</html>
